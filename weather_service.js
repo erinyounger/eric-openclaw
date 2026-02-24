@@ -1,6 +1,9 @@
 const https = require('https');
 const fs = require('fs');
 
+// 设置时区为东八区
+process.env.TZ = 'Asia/Shanghai';
+
 const CHAT_ID = '6433007742'; // Master 的 Telegram chat_id
 
 // 天气代码转中文
