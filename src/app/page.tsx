@@ -3,6 +3,7 @@
 import { TodoInput } from '@/components/TodoInput';
 import { TodoList } from '@/components/TodoList';
 import { TodoFilter } from '@/components/TodoFilter';
+import { WeatherWidget } from '@/components/WeatherWidget';
 import { useTodo } from '@/hooks/useTodo';
 
 export default function Home() {
@@ -46,6 +47,9 @@ export default function Home() {
 
         {/* Card */}
         <div className="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg shadow-black/30">
+          {/* Weather Widget */}
+          <WeatherWidget />
+
           {/* Input */}
           <div className="mb-6">
             <TodoInput onAdd={addTodo} />
